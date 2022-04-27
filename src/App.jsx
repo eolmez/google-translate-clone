@@ -86,7 +86,7 @@ const App = () => {
         <>
           <TextBox
             selectedLanguage={inputLanguage}
-            style="input"
+            name="input"
             setShowModal={setShowModal}
             textToTranslate={textToTranslate}
             setTextToTranslate={setTextToTranslate}
@@ -96,7 +96,7 @@ const App = () => {
           </div>
           <TextBox
             selectedLanguage={outputLanguage}
-            style="output"
+            name="output"
             setShowModal={setShowModal}
             translatedText={translatedText}
             setTranslatedText={setTranslatedText}

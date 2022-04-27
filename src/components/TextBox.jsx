@@ -2,24 +2,24 @@ import SelectDropDown from "./SelectDropDown";
 
 const TextBox = ({
   selectedLanguage,
-  style,
+  name,
   setShowModal,
   textToTranslate,
   setTextToTranslate,
   translatedText,
 }) => {
   return (
-    <div className={style}>
+    <div className={name}>
       <SelectDropDown
-        style={style}
+        style={name}
         setShowModal={setShowModal}
         selectedLanguage={selectedLanguage}
       />
       <textarea
-        placeholder={style === "input" ? "Enter Text" : "Translation"}
-        disabled={style === "output"}
+        placeholder={name === "input" ? "Enter Text" : "Translation"}
+        disabled={name === "output"}
         onChange={(e) => setTextToTranslate(e.target.value)}
-        value={style === "input" ? textToTranslate : translatedText}
+        defaultValue={name === "input" ? textToTranslate : translatedText}
       />
     </div>
   );
