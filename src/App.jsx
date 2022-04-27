@@ -86,17 +86,18 @@ const App = () => {
         <>
           <TextBox
             selectedLanguage={inputLanguage}
-            name="input"
+            boxName="input"
             setShowModal={setShowModal}
             textToTranslate={textToTranslate}
             setTextToTranslate={setTextToTranslate}
+            translate={translate}
           />
           <div className="arrow-container" onClick={clickhandler}>
             <IoMdSwap className="arrow-icon" />
           </div>
           <TextBox
             selectedLanguage={outputLanguage}
-            name="output"
+            boxName="output"
             setShowModal={setShowModal}
             translatedText={translatedText}
             setTranslatedText={setTranslatedText}

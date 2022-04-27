@@ -33,12 +33,12 @@ const Modal = ({
       <div className="option-container">
         <ul>
           {filteredLanguages?.map((filteredLanguages, _index) => (
-            <div className="list-item">
+            <div className="list-item" key={_index}>
               <div className="icon">
                 {chosenLanguage === filteredLanguages ? "✓" : ""}
               </div>
               <li
-                key={_index}
+                
                 onClick={clickHandler}
                 style={{
                   color:

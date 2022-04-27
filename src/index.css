@@ -70,6 +70,7 @@ textarea {
   width: 26px;
   height: 26px;
   fill: #8ab4f8;
+  cursor: pointer;
 }
 
 .arrow-container {
