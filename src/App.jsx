@@ -20,8 +20,8 @@ const App = () => {
       method: "GET",
       url: "https://google-translate20.p.rapidapi.com/languages",
       headers: {
-        "X-RapidAPI-Host": "google-translate20.p.rapidapi.com",
-        "X-RapidAPI-Key": "f0dcdf9c87msh542e452831be710p1edea3jsnae094e9b3685",
+        "X-RapidAPI-Host": `${process.env.RAPID_API_HOST}`,
+        "X-RapidAPI-Key": `${process.env.RAPID_API_KEY_LANGUAGES}`,
       },
     };
 
@@ -49,8 +49,8 @@ const App = () => {
         sl: inputLanguage,
       },
       headers: {
-        "X-RapidAPI-Host": "google-translate20.p.rapidapi.com",
-        "X-RapidAPI-Key": "f0dcdf9c87msh542e452831be710p1edea3jsnae094e9b3685",
+        "X-RapidAPI-Host": `${process.env.RAPID_API_HOST}`,
+        "X-RapidAPI-Key": `${process.env.RAPID_API_KEY_TRANSLATE}`,
       },
     };
 
